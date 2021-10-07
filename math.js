@@ -4,7 +4,7 @@ function sorter(a, b) {
     return 0; // equal values MUST yield zero
   }
   
-  function kuartil(soal,data){
+  function kuartil(data){
     data.sort(sorter);
     // return data;
     let k1, k2, k3;
@@ -49,7 +49,7 @@ function sorter(a, b) {
         break;
     }
     const res = {kuartil1 : k1, kuartil2 : k2, kuartil3 : k3};
-    return `${soal}\nQ1 = ${res.kuartil1}\nQ2 = ${res.kuartil2}\nQ3 = ${res.kuartil3}\n`;
+    return `Q1 = ${res.kuartil1}\nQ2 = ${res.kuartil2}\nQ3 = ${res.kuartil3}\n`;
   }
   
   // console.log(kuartil(1,[5,8,9,6,4,8,7,9,4]))
